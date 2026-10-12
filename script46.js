@@ -1,0 +1,22 @@
+var img = document.querySelector('.card')
+var love = document.querySelector('#love')
+
+img.addEventListener('dblclick',function(){
+    love.style.opacity = 0.8
+    love.style.transform ='translate(-50%,-50%) scale(1) rotate(0deg)'
+    
+    setTimeout(function(){
+            love.style.transform ='translate(-50%,-300%) scale(1) rotate(60deg)'
+
+    },700)
+    setTimeout(function(){
+        love.style.opacity = 0
+    },900)
+    setTimeout(function(){
+                love.style.transform ='translate(-50%,-50%) scale(0) rotate(60deg)'
+
+    },1000)
+
+})
+
+
